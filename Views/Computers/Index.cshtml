@@ -1,3 +1,7 @@
+@model List<eRoomIT.Models.Entities.Computers>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +28,24 @@
                 </tr>
             </thead>
             <tbody>
-                
+                @foreach (var computer in Model)
+                {
+                    <tr>
+                        <td>@computer.TenMay</td>
+                        <td>@computer.CPU</td>
+                        <td>@computer.RAM</td>
+                        <td>@computer.BoNho</td>
+                        <td>@computer.ManHinh</td>
+                        <td>@computer.TinhTrangID</td>
+                        <td>@computer.PhongMayID</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@computer.MayTinhID" class="btn btn-primary">Sửa</a>
+                            @* <a asp-action="Details" asp-route-id="@computer.MayTinhID" class="btn btn-success">Chi tiết</a> *@
+                            <a asp-action="Delete" asp-route-id="@computer.MayTinhID" class="btn btn-danger">Xóa</a>
+                        </td>
+                    </tr>
+                }
+             
             </tbody>
         </table>
         <button class="btn btn-primary" data-toggle="modal" data-target="#addComputerModal">Thêm máy</button>

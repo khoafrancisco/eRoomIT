@@ -13,26 +13,26 @@ namespace eRoomIT.Controllers;
 public class UserController : Controller
 {
     private readonly ILogger<UserController> _logger;
-    private readonly AppDbContext _dbContext;
+    private readonly AppDbContext _appDbContext;
 
     public UserController(ILogger<UserController> logger, AppDbContext context)
     {
         _logger = logger;
-        _dbContext = context;
+        _appDbContext = context;
     }
     public IActionResult Login()
     {
         return View();
     }
     [HttpPost]
-     public async Task<IActionResult> Login(LoginModel loginModel, string? returnUrl = null)
+    public async Task<IActionResult> Login(LoginModel loginModel, string? returnUrl = null)
     {
         if (ModelState.IsValid)
         {
-            User? user = _dbContext.Users.Where(u => u.TenDangNhap == loginModel.UserName && u.MatKhau == loginModel.Password).FirstOrDefault();
+            User? user = _appDbContext.Users.Where(u => u.TenDangNhap == loginModel.UserName && u.MatKhau == loginModel.Password).FirstOrDefault();
             if (user != null)
             {
-               var claims = new List<Claim>
+                var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.TenDangNhap),
                     new Claim(ClaimTypes.Role, user.PhanQuyenID.ToString()),
@@ -65,10 +65,10 @@ public class UserController : Controller
                     // redirect response value.
                 };
                 await HttpContext.SignInAsync(
-                    CookieAuthenticationDefaults.AuthenticationScheme, 
-                    new ClaimsPrincipal(claimsIdentity), 
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity),
                     authProperties);
-               return LocalRedirect(returnUrl ?? "/Home/Index");
+                return LocalRedirect(returnUrl ?? "/Home/Index");
             }
             else
             {
@@ -83,7 +83,7 @@ public class UserController : Controller
 
     }
 
-     public IActionResult AccessDenied()
+    public IActionResult AccessDenied()
     {
         return View();
     }
@@ -92,5 +92,74 @@ public class UserController : Controller
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Login", "User");
     }
+    public IActionResult Index()
+    {
+        List<User> users = _appDbContext.Users.ToList();
+        return View(users);
+    }
+    public IActionResult Create()
+    {
+        return View();
+    }
 
+    [HttpPost]
+    public IActionResult Create(string TenDangNhap, string MatKhau, string PhanQuyenID)
+    {
+
+        if (ModelState.IsValid)
+        {
+            var user = new User
+            {
+                TenDangNhap = TenDangNhap,
+                MatKhau = MatKhau,
+                PhanQuyenID = int.Parse( PhanQuyenID)
+            };
+
+            _appDbContext.Users.Add(user);
+             _appDbContext.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+        return View();
+    }
+
+    public IActionResult Edit(int id)
+    {
+        _logger.LogInformation(id.ToString());
+        User? users = _appDbContext.Users.Where(x => x.NguoiDungID == id).FirstOrDefault();
+        if (users == null)
+        {
+            return NotFound("Không tìm thấy người dùng");
+        }
+        else
+        {
+            return View(users);
+        }
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(User users)
+    {
+        if (ModelState.IsValid)
+        {
+            _logger.LogInformation(users.NguoiDungID.ToString());
+            User? oldUser = _appDbContext.Users.Where(x => x.NguoiDungID == users.NguoiDungID).FirstOrDefault();
+            if (oldUser == null)
+            {
+                return NotFound("Không tìm thấy nguoi dung");
+            }
+            else
+            {
+                oldUser.TenDangNhap = users.TenDangNhap;
+                oldUser.MatKhau = users.MatKhau;
+                oldUser.PhanQuyenID = users.PhanQuyenID;
+                oldUser.ThongTinKhac = users.ThongTinKhac;
+                _appDbContext.Users.Update(oldUser);
+                await _appDbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+        }
+        return View(users);
+
+    }
 }
