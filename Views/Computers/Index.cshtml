@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Management</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Computer Management</h2>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Tên máy</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>Bộ nhớ</th>
+                    <th>Màn hình</th>
+                    <th>Tình trạng máy</th>
+                    <th>Phòng máy</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addComputerModal">Thêm máy</button>
+    </div>
+
+    <!-- Add Computer Modal -->
+    <div class="modal fade" id="addComputerModal" tabindex="-1" role="dialog" aria-labelledby="addComputerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addComputerModalLabel">Thêm máy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <!-- Form fields for computer information -->
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="TenMay">Tên máy</label>
+                            <input type="text" class="form-control" id="TenMay" name="TenMay">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpu">CPU</label>
+                            <input type="text" class="form-control" id="cpu" name="cpu">
+                        </div>
+                        <div class="form-group">
+                            <label for="ram">RAM</label>
+                            <input type="text" class="form-control" id="ram" name="ram">
+                        </div>
+                        <div class="form-group">
+                            <label for="hardDrive">Bộ nhớ ổ cứng</label>
+                            <input type="text" class="form-control" id="hardDrive" name="hardDrive">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Tình trạng máy</label>
+                            <input type="text" class="form-control" id="status" name="status">
+                        </div>
+                        <div class="form-group">
+                            <label for="room">Thuộc phòng</label>
+                            <input type="text" class="form-control" id="room" name="room">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

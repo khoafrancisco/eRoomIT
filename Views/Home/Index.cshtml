@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Thêm biểu tượng lá cờ -->
+<img id="english-flag" src="/images/england-flag.jpg" class="float-right" style="margin-right: 5px; width: 30px;">
+<img id="vietnamese-flag" src="/images/vietnamese-flag.png" class="float-right" style="margin-right: 10px; width: 30px;">
+
+<i id="light-theme-icon" class="fas fa-sun float-right" style="margin-right: 20px;"></i>
+<i id="dark-theme-icon" class="fas fa-moon float-right d-none" style="margin-right: 20px;"></i>
+
+
+<div class="container">
+    <h1 class="display-4 text-center">Welcome to IT Room Management</h1>
+    <p class="text-center">Explore our rooms and their layouts below.</p>
+
+    <div class="row">
+        
+        @for (int i = 0; i < 9; i++)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Room image">
+                    <div class="card-body">
+                        <h5 class="card-title">Room Name</h5>
+                        <p class="card-text">Room details...</p>
+                        <a href="#" class="btn btn-primary">View Room</a>
+                    </div>
+                </div>
+            </div>
+        }
+        
+    </div>
+</div>

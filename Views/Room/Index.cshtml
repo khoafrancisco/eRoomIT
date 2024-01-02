@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Quản lý phòng máy";
+}
+<h3 class="display-4 text-primary text-shadow font-weight-bold">@ViewData["Title"]</h3>
+
+
+
+@using eRoomIT.Models.Entities;
+@model List<Room>
+
+<div class="container">
+
+<a class="btn btn-success" asp-action="Create" >+ Thêm Phòng</a> 
+   <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tên phòng</th>
+                        <th>Số máy</th>
+                        <th>Mo ta</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var room in Model)
+                    {
+                        <tr>
+                            <td>@room.TenPhong</td>
+                            <td>@room.SoMay</td>
+                            <td>@room.MoTa</td>
+                            <td>
+                                <a class="btn btn-primary" asp-action="Edit"  asp-route-id="@room.PhongMayID">Chỉnh sửa</a>
+                                <button class="btn btn-danger" onclick="onDelete(@room.PhongMayID)">Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<script>// Triggering a basic SweetAlert
+    onDelete = (id) => {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: `/Room/Delete/${id}`,
+                    method: 'DELETE',
+                    success: (data) => {
+                        if (data.success) {
+                            Swal.fire(
+                                'Deleted!',
+                                data.message,
+                                'success'
+                            ).then((result) => {
+                                location.reload();
+                            });
+                        }
+                        else {
+                            Swal.fire(
+                                'Error!',
+                                'Something went wrong.',
+                                'error'
+                            )
+                        }
+                    }
+                })
+            }
+        })
+    }
+   
+</script>

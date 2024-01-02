@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_DefaultLayout";
+}
+@model LoginModel
+
+<div class="container">
+    <body style="background-color: rgb(157, 188, 176);"></body>
+    <div class="d-flex align-items-start mb-4 mt-5">
+        <img src="~/images/logo.png" alt="Logo" width="150" height="150" style="border-radius: 90px;">
+        <div class="ml-custom">
+            <br>
+            <h2 style="color: #007BFF; text-shadow: 2px 2px 4px #571313;"><b>Quản lý phòng máy</b></h2>
+            <h1 style="color: #3d28a7; text-shadow: 2px 2px 4px #000000;"><b>Khoa Công nghệ thông tin</b></h1>
+        </div>
+    </div>
+    <br>
+    @if (ViewBag.Message != null) {
+        <p class="alert alert-danger">@ViewBag.Message</p>
+    }              
+    <div class="container d-flex flex-column align-items-center">
+    
+    <form class="col-sm-6" method="post">
+        <div class="mb-3">
+            <label asp-for="UserName" class="form-label"></label>
+            <input type="text" class="form-control" asp-for="UserName" aria-describedby="emailHelp" placeholder="Type Username or Email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+  
+    <div class="mb-3">
+      <label asp-for="Password" class="form-label"></label>
+      <input type="password" class="form-control" asp-for="Password" placeholder="Type Password">
+    </div>
+  
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" asp-for="RememberMe">
+      <label class="form-check-label" asp-for="RememberMe"></label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

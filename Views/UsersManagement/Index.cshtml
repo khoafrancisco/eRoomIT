@@ -1,0 +1,116 @@
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+
+<h3 class="display-4 text-primary text-shadow font-weight-bold">@ViewData["Title"]</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Tên đăng nhập</th>
+                    <th>Mật khẩu</th>
+                    <th>Quyền</th>
+                    <th>Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User data will go here -->
+                <tbody>
+                    @foreach(var users in Model)
+                    {
+                        <tr>
+                            <td>@users.TenDangNhap</td>
+                            <td>
+                                <i id="toggle-password-@users.NguoiDungID" class="fas fa-eye" onclick="togglePassword('@users.NguoiDungID')"></i>
+                                <input type="password" id="password-@users.NguoiDungID" value="@users.MatKhau" style="display: none;">
+                            </td>
+                            <td>@users.PhanQuyenID</td>
+                            <td>@users.ThongTinKhac</td>
+                            <td>
+                                <a class="btn btn-primary" asp-action="Edit"  asp-route-id="@users.NguoiDungID">Chỉnh sửa</a>
+                                <button class="btn btn-danger" onclick="onDelete(@users.NguoiDungID)">Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addUserModal">Thêm người dùng</button>
+    </div>
+
+    <!-- Add User Modal -->
+    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addUserModalLabel">Thêm người dùng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Phân quyền</label>
+                            <select class="form-control" id="role">
+                                <option>Admin</option>
+                                <option>User</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+<script>
+    function togglePassword(userId) {
+        var passwordInput = document.getElementById('password-' + userId);
+        var toggleIcon = document.getElementById('toggle-password-' + userId);
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.add('fa-eye-slash');
+            toggleIcon.classList.remove('fa-eye');
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.add('fa-eye');
+            toggleIcon.classList.remove('fa-eye-slash');
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
