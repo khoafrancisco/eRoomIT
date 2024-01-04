@@ -9,71 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eRoomIT
 build_property.RootNamespace = eRoomIT
-build_property.ProjectDir = C:\Users\joskh\Desktop\eRoom\eRoomIT\
+build_property.ProjectDir = C:\Users\joskh\Desktop\code\eRoomIT\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\joskh\Desktop\eRoom\eRoomIT
+build_property.MSBuildProjectDirectory = C:\Users\joskh\Desktop\code\eRoomIT
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Computers/Index.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Computers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Home/Index.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Home/Privacy.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Room/Create.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Partial/User/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFxVc2VyXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Room/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Room/Edit.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Room/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Room/Index.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Room/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Shared/Error.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Shared/_DefaultLayout.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Shared/_DefaultLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWZhdWx0TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/User/AccessDenied.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/User/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/User/Index.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/User/Login.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/_ViewImports.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/_ViewStart.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joskh/Desktop/eRoom/eRoomIT/Views/Shared/_Layout.cshtml]
+[C:/Users/joskh/Desktop/code/eRoomIT/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2sox6f4q79

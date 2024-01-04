@@ -16,6 +16,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
+                        <th>So do</th>
                         <th>Tên phòng</th>
                         <th>Số máy</th>
                         <th>Mo ta</th>
@@ -26,6 +27,7 @@
                     @foreach(var room in Model)
                     {
                         <tr>
+                            <td><img src="~/images/@room.SoDoPhong" width="100" height="100" /></td>
                             <td>@room.TenPhong</td>
                             <td>@room.SoMay</td>
                             <td>@room.MoTa</td>

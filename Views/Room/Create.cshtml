@@ -6,7 +6,13 @@
 
 <h2>Create Room</h2>
 
-<form asp-action="Create">
+<form asp-action="Create" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label asp-for="UploadFile" class="control-label">Upload So Do Phong</label>
+        <input asp-for="UploadFile" class="form-control" />
+        <span asp-validation-for="UploadFile" class="text-danger"></span>
+    </div>
     <div class="form-group">
         <label asp-for="TenPhong" class="control-label">Tên Phòng</label>
         <input asp-for="TenPhong" class="form-control" />
@@ -16,11 +22,6 @@
         <label asp-for="SoMay" class="control-label">Số Máy</label>
         <input asp-for="SoMay" class="form-control" />
         <span asp-validation-for="SoMay" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="SoDoPhong" class="control-label">Sơ Đồ Phòng</label>
-        <input asp-for="SoDoPhong" class="form-control" />
-        <span asp-validation-for="SoDoPhong" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="MoTa" class="control-label">Mô Tả</label>

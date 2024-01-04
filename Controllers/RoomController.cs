@@ -11,12 +11,14 @@ public class RoomController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly AppDbContext _appDbContext;
+    private readonly IWebHostEnvironment _webHostEnvironment;
 
     public RoomController(ILogger<HomeController> logger,
-    AppDbContext appDbContext)
+    AppDbContext appDbContext, IWebHostEnvironment webHostEnvironment)
     {
         _logger = logger;
         _appDbContext = appDbContext;
+        _webHostEnvironment = webHostEnvironment;
     }
     public IActionResult Index()
     {
@@ -33,6 +35,14 @@ public class RoomController : Controller
     {
         if (ModelState.IsValid)
         {
+            if(room.UploadFile != null)
+                {
+                    var fileName = Guid.NewGuid().ToString()  + Path.GetExtension(room.UploadFile.FileName);
+                    var file = Path.Combine(_webHostEnvironment.WebRootPath, "images",fileName );
+                    var stream = new FileStream(file, FileMode.Create);
+                    await room.UploadFile.CopyToAsync(stream);
+                    room.SoDoPhong = fileName;
+                }
             _appDbContext.Add(room);
             await _appDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -67,9 +77,16 @@ public class RoomController : Controller
              }
              else
              {
+                if(room.UploadFile != null)
+                {
+                    var fileName = Guid.NewGuid().ToString()  + Path.GetExtension(room.UploadFile.FileName);
+                    var file = Path.Combine(_webHostEnvironment.WebRootPath, "images",fileName );
+                    var stream = new FileStream(file, FileMode.Create);
+                    await room.UploadFile.CopyToAsync(stream);
+                    oldRoom.SoDoPhong = fileName;
+                }
                  oldRoom.TenPhong = room.TenPhong;
                  oldRoom.SoMay = room.SoMay;
-                 oldRoom.SoDoPhong = room.SoDoPhong;
                  oldRoom.MoTa = room.MoTa;
                  _appDbContext.Rooms.Update(oldRoom);
                  await _appDbContext.SaveChangesAsync();

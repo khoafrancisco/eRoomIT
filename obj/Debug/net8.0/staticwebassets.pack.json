@@ -1,259 +1,283 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eRoomIT.bundle.scp.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eRoomIT.bundle.scp.css",
       "PackagePath": "staticwebassets\\eRoomIT.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\images\\england-flag.jpg",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\a73c5f2b-ef22-47b8-9c5c-ae125d53f8a0.png",
+      "PackagePath": "staticwebassets\\images\\a73c5f2b-ef22-47b8-9c5c-ae125d53f8a0.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\c567af09-5dc4-4412-992a-e314ba172d02.png",
+      "PackagePath": "staticwebassets\\images\\c567af09-5dc4-4412-992a-e314ba172d02.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\d59c20ba-e6b6-4aeb-9f91-31aa1c41064f.png",
+      "PackagePath": "staticwebassets\\images\\d59c20ba-e6b6-4aeb-9f91-31aa1c41064f.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\ebe5bcf0-bcba-4dbf-b6f8-adbe864b5dd4.png",
+      "PackagePath": "staticwebassets\\images\\ebe5bcf0-bcba-4dbf-b6f8-adbe864b5dd4.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\ee8946e5-efa5-474e-bca4-b39d36550b6c.png",
+      "PackagePath": "staticwebassets\\images\\ee8946e5-efa5-474e-bca4-b39d36550b6c.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\england-flag.jpg",
       "PackagePath": "staticwebassets\\images\\england-flag.jpg"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\images\\logo.png",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\fea3af2d-6fce-43b9-9fd6-a6b112c4354b.png",
+      "PackagePath": "staticwebassets\\images\\fea3af2d-6fce-43b9-9fd6-a6b112c4354b.png"
+    },
+    {
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\images\\vietnamese-flag.png",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\vietnamese-flag.png",
       "PackagePath": "staticwebassets\\images\\vietnamese-flag.png"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

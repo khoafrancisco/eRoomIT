@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\eRoomIT.csproj": {}
+    "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\eRoomIT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\eRoomIT.csproj": {
+    "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\eRoomIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\eRoomIT.csproj",
+        "projectUniqueName": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\eRoomIT.csproj",
         "projectName": "eRoomIT",
-        "projectPath": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\eRoomIT.csproj",
+        "projectPath": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\eRoomIT.csproj",
         "packagesPath": "C:\\Users\\joskh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\obj\\",
+        "outputPath": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

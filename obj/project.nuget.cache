@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eADJX0LXD0biQU5C5TfT+tjPq4uCYF5O2As+JfWad1/AwnvyXyH9L+/dqvU6AqlEKWcA+D6ObaoSu0iw/wMqyw==",
+  "dgSpecHash": "RhUzyGOz2hUTbLHGn82PmfPCYAA6na4FLlcxSXR8Wl58OvN+KgEsAzyTzPwh84XTaGM5KO32iZ74GtFx7vCcZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joskh\\Desktop\\eRoom\\eRoomIT\\eRoomIT.csproj",
+  "projectFilePath": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\eRoomIT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joskh\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\joskh\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

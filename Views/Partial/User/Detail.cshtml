@@ -1,0 +1,92 @@
+@model eRoomIT.Models.Entities.User
+
+<form id="save-user" method="post">
+    <!-- Add User Modal -->
+    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addUserModalLabel">Thêm người dùng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" asp-for="NguoiDungID">
+                    <div class="form-group">
+                        <label for="username">Tên đăng nhập</label>
+                        <input asp-for="TenDangNhap" type="text" class="form-control" id="username"
+                            placeholder="Nhập tên đăng nhập">
+                        <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                    </div>
+                    @if (Model != null)
+                    {
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <input asp-for="MatKhau" value="@Model.MatKhau" type="password" class="form-control"
+                                id="password" placeholder="Nhập mật khẩu">
+                            <span asp-validation-for="MatKhau" class="text-danger"></span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <input asp-for="MatKhau" type="password" class="form-control" id="password"
+                                placeholder="Nhập mật khẩu">
+                            <span asp-validation-for="MatKhau" class="text-danger"></span>
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        <label for="role">Phân quyền</label>
+                        <select class="form-control" id="role" asp-for="PhanQuyenID">
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    @* <a type="button" class="btn btn-primary"  asp-action="Save">Lưu</a> *@
+                    <button type="button" class="btn btn-primary"  onclick="onSave()">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    onSave = () => {
+        console.log($('#save-user').serialize());
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("Save", "User")',
+            data: $('#save-user').serialize(),
+            success: (res) => {
+                if (res.success == true) {
+                    Swal.fire({
+                        title: "Thông báo",
+                        text: "Dữ liệu lưu thành công!",
+                        icon: "success",
+                    }).then((result) => {
+                        location.reload();
+                    });
+                }
+                else {
+                    Swal.fire({
+                        title: "Lỗi",
+                        text: res.message,
+                        icon: "error"
+                    });
+                }
+            },
+            error: (xhr, err) => {
+                Swal.fire({
+                    title: "Lỗi",
+                    text: "Có lỗi trong quá trình xử lý, vui lòng thử lại sau",
+                    icon: "error"
+                });
+            }
+        })
+    }
+</script>

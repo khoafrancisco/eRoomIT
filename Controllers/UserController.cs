@@ -7,6 +7,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Identity.Client;
+using System.Text.Json;
 
 namespace eRoomIT.Controllers;
 
@@ -97,34 +98,38 @@ public class UserController : Controller
         List<User> users = _appDbContext.Users.ToList();
         return View(users);
     }
-    public IActionResult Create()
+    [HttpGet]
+    public IActionResult Detail()
     {
-        return View();
+        return PartialView("~/Views/Partial/User/Detail.cshtml");
     }
 
     [HttpPost]
-    public IActionResult Create(string TenDangNhap, string MatKhau, string PhanQuyenID)
+    public IActionResult Save(User user)
     {
-
-        if (ModelState.IsValid)
+        try
         {
-            var user = new User
+            if (user.NguoiDungID > 0)
             {
-                TenDangNhap = TenDangNhap,
-                MatKhau = MatKhau,
-                PhanQuyenID = int.Parse( PhanQuyenID)
-            };
-
-            _appDbContext.Users.Add(user);
-             _appDbContext.SaveChanges();
-            return RedirectToAction(nameof(Index));
+                _appDbContext.Users.Update(user);
+                _appDbContext.SaveChanges();
+                return Json(new { success = true, message = "Cập nhật thành công" });
+            }
+            else
+            {
+                _appDbContext.Users.Add(user);
+                _appDbContext.SaveChanges();
+                return Json(new { success = true, message = "Thêm thành công" });
+            }
         }
-        return View();
+        catch
+        {
+            return Json(new { success = false, message = "Có lỗi xảy ra" });
+        }
     }
 
     public IActionResult Edit(int id)
     {
-        _logger.LogInformation(id.ToString());
         User? users = _appDbContext.Users.Where(x => x.NguoiDungID == id).FirstOrDefault();
         if (users == null)
         {
@@ -132,7 +137,8 @@ public class UserController : Controller
         }
         else
         {
-            return View(users);
+            _logger.LogInformation(users.MatKhau);
+            return PartialView("~/Views/Partial/User/Detail.cshtml", users);
         }
     }
 
@@ -160,6 +166,5 @@ public class UserController : Controller
 
         }
         return View(users);
-
     }
 }
