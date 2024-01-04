@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ya9ExxAknJnNItoOUhl0RZYqCe7TFaUnf42cdlZvYbw=",
+  "Hash": "Xap5sfCvCKrgi/S1sphqNGBjZLVP+I/eNb4NqbvcG+U=",
   "Source": "eRoomIT",
   "BasePath": "_content/eRoomIT",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\0d4ee173-8fd2-48a7-a1fe-7dab1a840196.png",
+      "SourceId": "eRoomIT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\",
+      "BasePath": "_content/eRoomIT",
+      "RelativePath": "images/0d4ee173-8fd2-48a7-a1fe-7dab1a840196.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0d4ee173-8fd2-48a7-a1fe-7dab1a840196.png"
+    },
+    {
       "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\a73c5f2b-ef22-47b8-9c5c-ae125d53f8a0.png",
       "SourceId": "eRoomIT",
       "SourceType": "Discovered",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\d59c20ba-e6b6-4aeb-9f91-31aa1c41064f.png"
+    },
+    {
+      "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\e87fc852-e688-43ed-9a6e-cac9cc7a996a.png",
+      "SourceId": "eRoomIT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\",
+      "BasePath": "_content/eRoomIT",
+      "RelativePath": "images/e87fc852-e688-43ed-9a6e-cac9cc7a996a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\e87fc852-e688-43ed-9a6e-cac9cc7a996a.png"
     },
     {
       "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\ebe5bcf0-bcba-4dbf-b6f8-adbe864b5dd4.png",
