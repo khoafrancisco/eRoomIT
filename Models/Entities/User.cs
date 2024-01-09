@@ -17,4 +17,7 @@ public class User
     public int PhanQuyenID { get; set; }
 
     public string? ThongTinKhac { get; set; }
+
+    [ForeignKey("PhanQuyenID")]
+    public Role? Role { get; set; }
 }

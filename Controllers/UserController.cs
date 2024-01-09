@@ -33,10 +33,12 @@ public class UserController : Controller
             User? user = _appDbContext.Users.Where(u => u.TenDangNhap == loginModel.UserName && u.MatKhau == loginModel.Password).FirstOrDefault();
             if (user != null)
             {
+                user.Role = _appDbContext.Roles.Where(r => r.PhanQuyenID == user.PhanQuyenID).FirstOrDefault();
+
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.TenDangNhap),
-                    new Claim(ClaimTypes.Role, user.PhanQuyenID.ToString()),
+                    new Claim(ClaimTypes.Role, user.Role!.MoTa!),
                 };
 
                 var claimsIdentity = new ClaimsIdentity(
@@ -93,17 +95,20 @@ public class UserController : Controller
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Login", "User");
     }
+    [Authorize(Roles = "Admin")]
     public IActionResult Index()
     {
         List<User> users = _appDbContext.Users.ToList();
         return View(users);
     }
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public IActionResult Detail()
     {
         return PartialView("~/Views/Partial/User/Detail.cshtml");
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public IActionResult Save(User user)
     {
@@ -128,6 +133,7 @@ public class UserController : Controller
         }
     }
 
+    [Authorize(Roles = "Admin")]
     public IActionResult Edit(int id)
     {
         User? users = _appDbContext.Users.Where(x => x.NguoiDungID == id).FirstOrDefault();
@@ -141,6 +147,7 @@ public class UserController : Controller
             return PartialView("~/Views/Partial/User/Detail.cshtml", users);
         }
     }
+    [Authorize(Roles = "Admin")]
 
     [HttpPost]
     public async Task<IActionResult> Edit(User users)
@@ -166,5 +173,22 @@ public class UserController : Controller
 
         }
         return View(users);
+    }
+    [Authorize(Roles = "Admin")]
+    [HttpDelete]
+    public async Task<IActionResult> DeleteAsync(int id)
+    {
+
+        User? users = _appDbContext.Users.Where(x => x.NguoiDungID == id).FirstOrDefault();
+        if (users == null)
+        {
+            return NotFound("Không tìm thấy người dùng");
+        }
+        else
+        {
+            _appDbContext.Users.Remove(users);
+            await _appDbContext.SaveChangesAsync();
+            return Json(new { success = true, message = "Xóa thành công" });
+        }
     }
 }

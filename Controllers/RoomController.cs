@@ -6,7 +6,7 @@ using eRoomIT.Models.Entities;
 
 namespace eRoomIT.Controllers;
 
-[Authorize(Roles = "1, 2")]
+[Authorize(Roles = "Admin")]
 public class RoomController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -69,7 +69,6 @@ public class RoomController : Controller
     {
         if (ModelState.IsValid)
         {
-            _logger.LogInformation(room.PhongMayID.ToString());
              Room? oldRoom = _appDbContext.Rooms.Where(x=>x.PhongMayID == room.PhongMayID).FirstOrDefault();
              if(oldRoom == null)
              {
@@ -77,6 +76,7 @@ public class RoomController : Controller
              }
              else
              {
+                
                 if(room.UploadFile != null)
                 {
                     var fileName = Guid.NewGuid().ToString()  + Path.GetExtension(room.UploadFile.FileName);

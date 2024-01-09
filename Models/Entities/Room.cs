@@ -6,7 +6,7 @@ namespace eRoomIT.Models.Entities;
 public class Room
 {
     [Key]
-    public int PhongMayID { get; set; }
+    public int ? PhongMayID { get; set; }
 
     [Required(ErrorMessage = "Vui lòng nhập tên phòng")]
     public string? TenPhong { get; set; }

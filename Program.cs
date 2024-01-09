@@ -1,6 +1,8 @@
 using eRoomIT.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations.Builders;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,13 +36,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseHttpsRedirection(); // chuyển hướng http sang https
+app.UseStaticFiles();  // sử dụng file tĩnh
 
-app.UseRouting();
+app.UseRouting(); // xác định đường dẫn
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseAuthentication(); // xác dịnh người dùng
+app.UseAuthorization(); // xác định quyền hạn
 
 app.MapControllerRoute(
     name: "default",

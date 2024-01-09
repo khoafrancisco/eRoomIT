@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using eRoomIT.Models.Entities;
 
 namespace eRoomIT.Controllers;
-[Authorize(Roles = "1, 2")]
+[Authorize(Roles = "Admin")]
 
 public class ComputersController : Controller
 {

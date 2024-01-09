@@ -46,7 +46,7 @@
     <button class="btn btn-primary" onclick="onCreate()">Thêm người dùng</button>
 
 </div>
-// Nội dung cua modal
+
 <div id="modal-area-content"></div>
 
 
@@ -89,7 +89,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: `/Room/Delete/${id}`,
+                    url: `User/Delete/${id}`,
                     method: 'DELETE',
                     success: (data) => {
                         if (data.success) {
@@ -112,29 +112,6 @@
                 })
             }
         })
-    }
-
-    saveData = () => {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        var role = document.getElementById('role').value;
-        console.log(username, password, role);
-        $.ajax({
-            url: '@Url.Action("Create")',
-            type: 'POST',
-            data: {
-                TenDangNhap: username,
-                MatKhau: password,
-                PhanQuyenID: role
-            },
-            success: function (data) {
-                alert('Thêm thành công');
-                location.reload();
-            },
-            error: function (x, y, z) {
-                alert('Thêm thất bại');
-            }
-        });
     }
     function togglePassword(userId) {
         var passwordInput = document.getElementById('password-' + userId);

@@ -1,0 +1,51 @@
+﻿@model eRoomIT.Models.ViewModels.RoomViewModel
+
+@{
+    ViewBag.Title = "Room Details";
+}
+
+<div class="container mt-2">
+    <h2>@ViewBag.Title</h2>
+
+    <div class="col-12 m-5">
+        <img src="~/images/@Model.SoDoPhong" alt="" width="100%" height="500px">
+    </div>
+
+    <h3>@Model.TenPhong</h3>
+    <h4>Danh sach may tinh (@Model.SoMay May)</h4>
+    @if (Model.Computers != null)
+    {
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Tên máy</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>Bộ nhớ</th>
+                    <th>Màn hình</th>
+                    <th>Tình trạng máy</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var computer in Model.Computers)
+                {
+                    <tr>
+                        <td>@computer.TenMay</td>
+                        <td>@computer.CPU</td>
+                        <td>@computer.RAM</td>
+                        <td>@computer.BoNho</td>
+                        <td>@computer.ManHinh</td>
+                        <td>@computer.Status!.TrangThai</td>
+                        @* <td>
+                            <a asp-action="Edit" asp-controller="Computers" asp-route-id="@computer.MayTinhID" class="btn btn-primary">Sửa</a>
+                            <a asp-action="Details" asp-route-id="@computer.MayTinhID" class="btn btn-success">Chi tiết</a>
+                            <a asp-action="Delete" asp-route-id="@computer.MayTinhID" class="btn btn-danger">Xóa</a> 
+                        </td> *@
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+</div>
