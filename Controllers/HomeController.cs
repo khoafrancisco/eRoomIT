@@ -31,11 +31,10 @@ public class HomeController : Controller
         Room? room = _appDbContext.Rooms.Where(r => r.PhongMayID == id).FirstOrDefault();
         if (room == null)
         {
-            return NotFound("Khong tim thay phong may");
+            return NotFound("Không tìm thấy phòng máy");
         }
         else
         {
-
             List<Computers> _computers = _appDbContext.Computer.Where(c => c.PhongMayID == id).ToList();
             foreach (var computer in _computers)
             {

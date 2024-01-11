@@ -7,12 +7,12 @@
 <div class="container mt-2">
     <h2>@ViewBag.Title</h2>
 
-    <div class="col-12 m-5">
-        <img src="~/images/@Model.SoDoPhong" alt="" width="100%" height="500px">
+    <div class="col-12 m-5 text-center">    
+        <img src="~/images/@Model.SoDoPhong" alt="" width="50%" height="auto">
+        <h3>@Model.TenPhong</h3>
     </div>
-
-    <h3>@Model.TenPhong</h3>
-    <h4>Danh sach may tinh (@Model.SoMay May)</h4>
+    
+    <h4>Tổng số máy @Model.TenPhong là <strong><span style="color:blue">@Model.SoMay</span></strong> máy tính</h4>
     @if (Model.Computers != null)
     {
         <table class="table mt-3">
@@ -24,7 +24,6 @@
                     <th>Bộ nhớ</th>
                     <th>Màn hình</th>
                     <th>Tình trạng máy</th>
-                    <th>Thao tác</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,14 +36,8 @@
                         <td>@computer.BoNho</td>
                         <td>@computer.ManHinh</td>
                         <td>@computer.Status!.TrangThai</td>
-                        @* <td>
-                            <a asp-action="Edit" asp-controller="Computers" asp-route-id="@computer.MayTinhID" class="btn btn-primary">Sửa</a>
-                            <a asp-action="Details" asp-route-id="@computer.MayTinhID" class="btn btn-success">Chi tiết</a>
-                            <a asp-action="Delete" asp-route-id="@computer.MayTinhID" class="btn btn-danger">Xóa</a> 
-                        </td> *@
                     </tr>
                 }
-
             </tbody>
         </table>
     }

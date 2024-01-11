@@ -15,8 +15,6 @@ public class Computers
     public string ? BoNho { get; set; }
     public string? ManHinh { get; set; }
     public int? TinhTrangID { get; set; }
-
-    // Lien ket voi vang TinhTrang theo truong TinhTrangID
     [ForeignKey("TinhTrangID")]
     public Status? Status { get; set; }
 }

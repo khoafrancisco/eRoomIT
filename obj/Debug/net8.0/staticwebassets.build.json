@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MurqQfKSxUNzHcF6IVObnDq14E9ZeC5nGTAPpZrwFSI=",
+  "Hash": "EgBwdjC35IBrqNzkHgf3QYI8mRHprX6XWT4OMXiHmcE=",
   "Source": "eRoomIT",
   "BasePath": "_content/eRoomIT",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\66bfa195-3f1e-494a-8419-638d938dfc2b.png"
+    },
+    {
+      "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\6ae0ef3b-a4ab-43f6-b117-d9c0df5ccdb1.png",
+      "SourceId": "eRoomIT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\",
+      "BasePath": "_content/eRoomIT",
+      "RelativePath": "images/6ae0ef3b-a4ab-43f6-b117-d9c0df5ccdb1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6ae0ef3b-a4ab-43f6-b117-d9c0df5ccdb1.png"
     },
     {
       "Identity": "C:\\Users\\joskh\\Desktop\\code\\eRoomIT\\wwwroot\\images\\8f6646e7-58a7-419e-ba3b-67cfd0fce9c2.png",

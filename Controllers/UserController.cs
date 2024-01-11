@@ -75,12 +75,12 @@ public class UserController : Controller
             }
             else
             {
-                ViewBag.Message = "Tai khoan khong ton tai";
+                ViewBag.Message = "Tài khoản không tồn tại";
             }
         }
         else
         {
-            ViewBag.Message = "Khong hop le";
+            ViewBag.Message = "Không hợp lệ";
         }
         return View(loginModel);
 
@@ -158,7 +158,7 @@ public class UserController : Controller
             User? oldUser = _appDbContext.Users.Where(x => x.NguoiDungID == users.NguoiDungID).FirstOrDefault();
             if (oldUser == null)
             {
-                return NotFound("Không tìm thấy nguoi dung");
+                return NotFound("Không tìm thấy người dùng");
             }
             else
             {
